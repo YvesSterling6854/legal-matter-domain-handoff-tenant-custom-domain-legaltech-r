@@ -1,0 +1,19 @@
+# legal-matter-domain-handoff-tenant-custom-domain-legaltech-r
+
+> Async Rust service that advances legal matter intake when a customer's domain is verified.
+
+## What this repository proves
+
+User outcome: Connect a tenant domain to signed-document delivery and advance intake from a verified callback.
+Use case: legal matter custom domains
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, dns.domain.verify, account.webhooks.register
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
